@@ -1,0 +1,221 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+nav {
+  font-family: "Work Sans", sans-serif !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 0 !important;
+}
+
+iframe {
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.homepage-container {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+.with-label {
+  width: 100% !important;
+}
+.with-label > .input-container.inp-full-width {
+  width: 100% !important;
+}
+
+.sub-heading {
+  margin-top: 0;
+  color: #555 !important;
+}
+
+.preview-dimensions-input-container {
+  margin-bottom: 10px;
+}
+
+.form-container {
+  margin: 20px 0;
+}
+.form-container > * {
+  margin-bottom: 10px;
+}
+
+.flex-wrap-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-label {
+  height: calc(1.687 * 16pt);
+  padding: 0 8pt;
+  display: inline-flex;
+  width: initial;
+  align-items: center;
+  pointer-events: none;
+  margin: 0;
+  color: #888;
+  background-color: #fafafa;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  font-size: .875rem;
+  line-height: 1;
+}
+
+.btn .icon, .btn .icon svg {
+  margin-right: 0 !important;
+}
+
+.image {
+  margin: 0 !important;
+}
+
+
+/* SponsorCard css START */
+.editable-card-container {
+  width: max-content;
+}
+.item-card {
+  display: flex;
+  width: 450px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  transition: 200ms;
+  position: relative;
+}
+.card-edit-section {
+  width: 450px;
+  height: 0px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+.card-edit-section > * {
+  margin-bottom: 10px;
+}
+.card-edit-section.show {
+  height: auto;
+  padding: 10px;
+  padding-top: 20px;
+}
+.item-card-img-container {
+  width: 45%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.item-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 700ms;
+}
+.item-card-details-container {
+  width: 55%;
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-card-details-container.no-response {
+  background-color: #ccc;
+}
+.item-card-details-container.in-comm {
+  background-color: #fff999;
+}
+.item-card-details-container.rejected {
+  background-color: #f99;
+}
+.item-card-details-container.sponsoring {
+  background-color: #99ffae;
+}
+.item-card-title {
+  margin: 0;
+  color: black;
+  text-transform: uppercase;
+}
+.add-to-cart-btn {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.item-card-discount-tag {
+  position: absolute;
+  top: 5%;
+  padding: 0 20px;
+  padding-right: 25px;
+  background-color: #ffe679;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  z-index: 1;
+  font-weight: 600;
+}
+.card-btns-container {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+.card-perk-tag {
+  padding: 0 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-right: 0px;
+  width: max-content;
+}
+/* SponsorCard END */
+
+/* Graphs START */
+.rv-xy-plot__series--label-text {
+  fill: white !important;
+}
+/* Graphs END */
+
+/* MOBILE SCREEN SIZE START */
+@media (max-width: 550px) {
+  .card-edit-section {
+    width: 80vw;
+  }
+  .item-card {
+    display: block;
+    width: max-content;
+    height: max-content;
+  }
+  .item-card-img-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  .item-card-details-container {
+    width: 100%;
+  }
+}
+/* MOBILE SCREEN SIZE END */
